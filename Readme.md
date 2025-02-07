@@ -32,13 +32,13 @@ Para ejecutar el programa, siga estos pasos:
 
     - [http://localhost:35000/home.html](http://localhost:35000/home.html)
 
-
+![image](https://github.com/user-attachments/assets/ffccd144-0842-44c0-aec5-5b9a92136101)
 
 1. Si intenta acceder a un servicio inexistente, se redirigirá a una página de error 404. Ejemplo:
 
     - [http://localhost:35000/imdex.html](http://localhost:35000/imdex.html)
 
-
+![image](https://github.com/user-attachments/assets/76b5eb3a-64d8-4f47-ace7-f1addc2bb7b7)
 
 1. Para visualizar un archivo específico, como una hoja de estilos, use:
 
