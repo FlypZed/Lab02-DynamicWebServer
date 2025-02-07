@@ -68,29 +68,6 @@ mvn javadoc:javadoc
 
 ---
 
-## Versionado
-
-**Versión:** 2.0
-
----
-
-## Autores
-
-- **Andres Felipe Parra Quiroga**
-
----
-
-## Detalles Técnicos
-
-El sistema sigue una arquitectura basada en API REST. Se han aplicado diversos patrones de diseño para mejorar la estructura y eficiencia del código:
-
-- **Gestión de caché:** Implementada con el patrón de diseño **Singleton**, asegurando una única instancia de caché en el servidor.
-- **Extensibilidad:** Uso de una única clase `PagesServices` con el patrón **Singleton**, permitiendo el acceso a recursos almacenados en disco sin necesidad de un servicio individual por cada archivo.
-- **Patrones de diseño:** Aplicación de **Fachada** y **Singleton** para mejorar la organización y reutilización del código.
-- **Modularización:** Clases diseñadas bajo el principio de **responsabilidad única**, facilitando la escalabilidad y mantenimiento del código.
-
----
-
 ## Alcance del Proyecto y Características
 
 ### 1. Método `GET` Estático para Servicios REST
@@ -133,7 +110,7 @@ El framework buscará los archivos estáticos en el directorio especificado, com
 
 El siguiente código inicia un servidor web que sirve una aplicación con archivos estáticos ubicados en `target/classes/webroot`. Los servicios REST responderán a las siguientes solicitudes:
 
-- [http://localhost:8080/App/hello?name=Pedro](http://localhost:8080/App/hello?name=Pedro)
+- [http://localhost:8080/App/hello?name=Aglaea](http://localhost:8080/App/hello?name=Aglaea)
 - [http://localhost:8080/App/pi](http://localhost:8080/App/pi)
 
 **Código de Ejemplo:**
@@ -149,6 +126,32 @@ public static void main(String[] args) {
 ```
 
 En este ejemplo, los servicios REST se publican con el prefijo `/App`. Este prefijo es solo una sugerencia y puede modificarse según las necesidades del desarrollador.
+
+---
+
+## Versionado
+
+**Versión:** 2.0
+
+---
+
+## Autores
+
+- **Andres Felipe Parra Quiroga**
+
+---
+
+## Detalles Técnicos
+
+El sistema sigue una arquitectura basada en API REST. Se han aplicado diversos patrones de diseño para mejorar la estructura y eficiencia del código:
+
+- **Gestión de caché:** Implementada con el patrón de diseño **Singleton**, asegurando una única instancia de caché en el servidor.
+- **Extensibilidad:** Uso de una única clase `PagesServices` con el patrón **Singleton**, permitiendo el acceso a recursos almacenados en disco sin necesidad de un servicio individual por cada archivo.
+- **Patrones de diseño:** Aplicación de **Fachada** y **Singleton** para mejorar la organización y reutilización del código.
+- **Modularización:** Clases diseñadas bajo el principio de **responsabilidad única**, facilitando la escalabilidad y mantenimiento del código.
+
+---
+
 
 ---
 
