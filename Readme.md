@@ -152,6 +152,3 @@ El sistema sigue una arquitectura basada en API REST. Se han aplicado diversos p
 
 ---
 
-
----
-
